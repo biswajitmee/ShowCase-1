@@ -14,6 +14,6 @@
 /* custome style creat */
 @layer utilities{
 
-
+  section{ height: 100vh;}
 
 }
