@@ -16,4 +16,20 @@
 
   section{ height: 100vh;}
 
+
+  .HorizetalScrollWraper {
+    display: flex;
+    overflow-x: scroll; /* Allow horizontal scrolling */
+  }
+  
+  .scrollSection{ overflow-x:auto;}
+  .scrollBox{ width: 700px;}
+  .scrollBox:nth-child(1){ background-color: blue;}
+  .scrollBox:nth-child(2){ background-color: rgb(27, 213, 89);}
+  .scrollBox:nth-child(3){ background-color: rgb(208, 125, 17);}
+  .scrollBox:nth-child(4){ background-color: rgb(18, 209, 155);}
+  .scrollBox:nth-child(5){ background-color: rgb(211, 15, 201);}
+  .scrollBox:nth-child(6){ background-color: rgb(202, 245, 12);}
+  .scrollBox:nth-child(7){ background-color: rgb(8, 235, 201);}
+
 }

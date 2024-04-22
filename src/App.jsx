@@ -47,27 +47,67 @@ function App() {
   
 
 
-    <section className='bg-green-800		'>
-    <h1 className="text-3xl font-bold underline">
-      Hello world! section 2
-    </h1>
-    </section>
+<section className='bg-green-800 '> 
+
+<div className="HorizetalScrollWraper">
+<div className=" flex flex-nowrap">
+ 
+  <div className="scrollBox">
+    <h1> In publishing and graphic design, Lorem ipsum is a placeholder text
+     commonly used to demonstrate the visual form of a document 
+     or a typeface without relying on meaningful content. 
+     Lorem ipsum may be used as a placeholder before the final copy 
+     is available.</h1>
+  </div>
+
+  <div className="scrollBox">
+    <h1> In publishing and graphic design, Lorem ipsum is a placeholder text
+     commonly used to demonstrate the visual form of a document 
+     or a typeface without relying on meaningful content. 
+     Lorem ipsum may be used as a placeholder before the final copy 
+     is available.</h1>
+  </div>
+
+  <div className="scrollBox">
+    <h1> In publishing and graphic design, Lorem ipsum is a placeholder text
+     commonly used to demonstrate the visual form of a document 
+     or a typeface without relying on meaningful content. 
+     Lorem ipsum may be used as a placeholder before the final copy 
+     is available.</h1>
+  </div>
+
+  <div className="scrollBox">
+    <h1> In publishing and graphic design, Lorem ipsum is a placeholder text
+     commonly used to demonstrate the visual form of a document 
+     or a typeface without relying on meaningful content. 
+     Lorem ipsum may be used as a placeholder before the final copy 
+     is available.</h1>
+  </div>
+
+  <div className="scrollBox">
+    <h1> In publishing and graphic design, Lorem ipsum is a placeholder text
+     commonly used to demonstrate the visual form of a document 
+     or a typeface without relying on meaningful content. 
+     Lorem ipsum may be used as a placeholder before the final copy 
+     is available.</h1>
+  </div>
+
+  <div className="scrollBox">
+    <h1> In publishing and graphic design, Lorem ipsum is a placeholder text
+     commonly used to demonstrate the visual form of a document 
+     or a typeface without relying on meaningful content. 
+     Lorem ipsum may be used as a placeholder before the final copy 
+     is available.</h1>
+  </div>
+
+
+</div>
+</div>
+</section>
 
 
 
-    <section className='bg-fuchsia-700		'>
-    <h1 className="text-3xl font-bold underline">
-      Hello world! section 3
-    </h1>
-    </section>
 
-
-
-    <section className='bg-cyan-500		'>
-    <h1 className="text-3xl font-bold underline">
-      Hello world! section 4
-    </h1>
-    </section>
   </div>
 </div>
 

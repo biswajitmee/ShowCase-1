@@ -554,14 +554,46 @@ video {
   --tw-contain-style:  ;
 }
 
-.bg-cyan-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(6 182 212 / var(--tw-bg-opacity));
+.container {
+  width: 100%;
 }
 
-.bg-fuchsia-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(162 28 175 / var(--tw-bg-opacity));
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
 }
 
 .bg-green-800 {
@@ -589,6 +621,44 @@ video {
 
 section{
   height: 100vh;
+}
+
+.HorizetalScrollWraper {
+  display: flex;
+  overflow-x: scroll;
+  /* Allow horizontal scrolling */
+}
+
+.scrollBox{
+  width: 700px;
+}
+
+.scrollBox:nth-child(1){
+  background-color: blue;
+}
+
+.scrollBox:nth-child(2){
+  background-color: rgb(27, 213, 89);
+}
+
+.scrollBox:nth-child(3){
+  background-color: rgb(208, 125, 17);
+}
+
+.scrollBox:nth-child(4){
+  background-color: rgb(18, 209, 155);
+}
+
+.scrollBox:nth-child(5){
+  background-color: rgb(211, 15, 201);
+}
+
+.scrollBox:nth-child(6){
+  background-color: rgb(202, 245, 12);
+}
+
+.scrollBox:nth-child(7){
+  background-color: rgb(8, 235, 201);
 }
 
 /* component base style */
