@@ -6,6 +6,13 @@ import { useGSAP } from '@gsap/react';
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother);
 
+
+
+
+
+
+
+
 function App() {
   const main = useRef();
   const smoother = useRef();
@@ -13,6 +20,9 @@ function App() {
   // const scrollTo = () => {
   //   smoother.current.scrollTo('.box-c', true, 'center center');
   // };
+
+
+
 
   useGSAP(
     () => {
@@ -22,6 +32,7 @@ function App() {
         effects: true, // look for data-speed and data-lag attributes on elements and animate accordingly
         smoothTouch: 0.5, 
       });
+
       // ScrollTrigger.create({
       //   trigger: '.box-c',
       //   pin: true,
@@ -29,10 +40,40 @@ function App() {
       //   end: '+=300',
       //   markers: true,
       // });
+
     },
     { scope: main }
   );
   
+
+
+
+  const races = document.querySelector(".HorizetalScrollWraper");
+
+  function getscrollAmount(){
+    let racesWidth = races.offsetWidth;
+    return -(racesWidth - window.innerWidth);
+  }
+  
+  const tween = gsap.to(races, {
+    x:getscrollAmount,
+    duration:3,
+    ease:"none"
+  })
+  
+  ScrollTrigger.create({
+    trigger:".HorizetalScrollWraper",
+    start:"top 20%",
+    end: () => `+=${getscrollAmount() * -1}`,
+    pin:true,
+    animation:tween,
+    scrub:1,
+    invalidateOnRefresh:true,
+    markers:true,
+  })
+
+
+
   return (
     <>
 
@@ -45,9 +86,14 @@ function App() {
     </h1>
     </section>
   
+    <section className='bg-green-900	'>
+    <h1 className="text-3xl font-bold underline">
+      Hello world! section 2
+    </h1>
+    </section>
+  
 
-
-<section className='bg-green-800 '> 
+<section className='border-b-indigo-600 '> 
 
 <div className="HorizetalScrollWraper">
 <div className=" flex flex-nowrap">

@@ -22,8 +22,8 @@
     overflow-x: scroll; /* Allow horizontal scrolling */
   }
   
-  .scrollSection{ overflow-x:auto;}
-  .scrollBox{ width: 700px;}
+
+  .scrollBox{ width: 300px;}
   .scrollBox:nth-child(1){ background-color: blue;}
   .scrollBox:nth-child(2){ background-color: rgb(27, 213, 89);}
   .scrollBox:nth-child(3){ background-color: rgb(208, 125, 17);}
