@@ -554,42 +554,19 @@ video {
   --tw-contain-style:  ;
 }
 
-.flex {
-  display: flex;
-}
-
-.flex-nowrap {
-  flex-wrap: nowrap;
-}
-
-.border-b-indigo-600 {
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(79 70 229 / var(--tw-border-opacity));
-}
-
-.bg-green-800 {
+.bg-lime-400 {
   --tw-bg-opacity: 1;
-  background-color: rgb(22 101 52 / var(--tw-bg-opacity));
+  background-color: rgb(163 230 53 / var(--tw-bg-opacity));
+}
+
+.bg-pink-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(190 24 93 / var(--tw-bg-opacity));
 }
 
 .bg-red-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(127 29 29 / var(--tw-bg-opacity));
-}
-
-.bg-green-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(20 83 45 / var(--tw-bg-opacity));
-}
-
-.bg-blue-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
-}
-
-.bg-amber-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 191 36 / var(--tw-bg-opacity));
 }
 
 .text-3xl {
@@ -609,14 +586,40 @@ section{
   height: 100vh;
 }
 
-.HorizetalScrollWraper {
+/* 
+  .HorizetalScrollWraper {
+    display: flex;
+    overflow-x: scroll;  
+  }
+   */
+
+.pinWrapper {
   display: flex;
-  overflow-x: scroll;
-  /* Allow horizontal scrolling */
+  /* justify-content: center;  */
+  align-items: center;
 }
 
-.scrollBox{
-  width: 300px;
+.HorizetalScroll {
+  display: flex;
+  flex-wrap: nowrap;
+  /* white-space: nowrap;  */
+  background-color: #000;
+}
+
+.scrollBox {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.subDiv{
+  height: 400px;
+  width: 100vw;
+}
+
+.scrollBox {
+  font-size: 55px;
+  letter-spacing: 1px;
+  font-weight: 500;
 }
 
 .scrollBox:nth-child(1){

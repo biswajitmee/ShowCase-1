@@ -16,14 +16,32 @@
 
   section{ height: 100vh;}
 
-
+/* 
   .HorizetalScrollWraper {
     display: flex;
-    overflow-x: scroll; /* Allow horizontal scrolling */
+    overflow-x: scroll;  
+  }
+   */
+   .pinWrapper {
+    display: flex;
+    /* justify-content: center;  */
+    align-items: center;  
+    
+  }
+   .HorizetalScroll {
+    display: flex;
+    flex-wrap: nowrap;
+    /* white-space: nowrap;  */
+    background-color: #000;
   }
   
+  .scrollBox {
+    display: inline-block;  
+    margin-right: 10px; 
+  }
 
-  .scrollBox{ width: 300px;}
+.subDiv{ height: 400px; width: 100vw;}
+  .scrollBox {font-size: 55px; letter-spacing: 1px; font-weight: 500;}
   .scrollBox:nth-child(1){ background-color: blue;}
   .scrollBox:nth-child(2){ background-color: rgb(27, 213, 89);}
   .scrollBox:nth-child(3){ background-color: rgb(208, 125, 17);}
