@@ -40,6 +40,23 @@ function App() {
     });
 
 
+
+
+    gsap.to(".circelSvg", {
+      rotate:360,
+      duration: 2,
+      ease: "elastic",
+      scrollTrigger: {
+        trigger: ".circelSvg",
+        containerAnimation: scrollTween,
+        start: "left center",
+        toggleActions: "play none none reset",
+        id: "1",
+      }
+    });
+
+
+
   }, { scope: main });
 
 
@@ -64,7 +81,7 @@ function App() {
               <div class="absolute inset-0 flex justify-center items-center">
   <div class=" p-4 rounded-lg horiBox1 text-2xl ">
  
-<img src="round.svg" alt="Shape 2" />
+<img className='circelSvg' src="round.svg" alt="Shape 2" />
 
 </div>
 </div>
