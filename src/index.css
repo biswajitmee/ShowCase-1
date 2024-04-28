@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Micro+5&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,49 +10,177 @@
 
 
 /* component base style */
-@layer components {
-
-
-
-}
+@layer components {}
 
 /* custome style creat */
-@layer utilities{
+@layer utilities {
 
-  section{ height: 100vh;}
-
-/* 
-  .HorizetalScrollWraper {
-    display: flex;
-    overflow-x: scroll;  
+  section {
+    height: 100vh;
+    width: 100vw;
   }
-   */
-   .pinWrapper {
+
+
+  .header_section {
+    background-image: url(/public/bg-wave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+  }
+
+  .shapesSection {
     display: flex;
-    /* justify-content: center;  */
-    align-items: center;  
+
+  }
+
+  .shape {
+    position: absolute;
+  }
+
+  .shape:nth-child(1) {
+    left: -5%;
+  }
+
+  .shape:nth-child(2) {
+    left: 20%;
+  }
+
+  .shape:nth-child(3) {
+    left: 50%;
+  }
+
+  .shape:nth-child(4) {
+    left: 80%;
+  }
+
+
+  .shape img {
+    width: 35vw;
+  }
+
+  .header_text {
+    width: 100%;
+  }
+
+
+
+ .anm1   {
+  mix-blend-mode: screen;
+  isolation: isolate;
+}
+
+.anm2   {
+  mix-blend-mode: screen;
+  isolation: isolate;
+ 
+}
+
+.anm3   {
+  mix-blend-mode: screen;
+  isolation: isolate;
+}
+
+.anm4   {
+  mix-blend-mode: difference;
+  isolation: isolate;
+}
+
+
+
+  .gradient_text1 {
+    background: linear-gradient(to right, #BB00D9 0%, #D50349 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* font-size: 5vw; */
     
   }
-   .HorizetalScroll {
+
+  .gradient_text2 {
+    font-family: "Oleo Script Swash Caps", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: rgb(255, 249, 249);
+    /* font-size: 9vw; */
+  }
+
+.gency_fnt{ font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+letter-spacing: 2px;
+ 
+}
+
+
+  .pinWrapper {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+
+  }
+
+  .HorizetalScroll {
     display: flex;
     flex-wrap: nowrap;
     /* white-space: nowrap;  */
     background-color: #000;
   }
-  
+
   .scrollBox {
-    display: inline-block;  
-    margin-right: 10px; 
+    display: inline-block;
+    margin-right: 10px;
   }
 
-.subDiv{ height: 400px; width: 100vw;}
-  .scrollBox {font-size: 55px; letter-spacing: 1px; font-weight: 500;}
-  .scrollBox:nth-child(1){ background-color: blue;}
-  .scrollBox:nth-child(2){ background-color: rgb(27, 213, 89);}
-  .scrollBox:nth-child(3){ background-color: rgb(208, 125, 17);}
-  .scrollBox:nth-child(4){ background-color: rgb(18, 209, 155);}
-  .scrollBox:nth-child(5){ background-color: rgb(211, 15, 201);}
-  .scrollBox:nth-child(6){ background-color: rgb(202, 245, 12);}
-  .scrollBox:nth-child(7){ background-color: rgb(8, 235, 201);}
+  .subDiv {
+    height: 400px;
+    width: 100vw;
+  }
+
+  .scrollBox {
+    font-size: 55px;
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+
+  .scrollBox:nth-child(1) {
+ 
+  }
+
+  .scrollBox:nth-child(2) {
+    background-color: rgb(27, 213, 89);
+  }
+
+  .scrollBox:nth-child(3) {
+    background-color: rgb(208, 125, 17);
+  }
+
+  .scrollBox:nth-child(4) {
+    background-color: rgb(18, 209, 155);
+  }
+
+  .scrollBox:nth-child(5) {
+    background-color: rgb(211, 15, 201);
+  }
+
+  .scrollBox:nth-child(6) {
+    background-color: rgb(202, 245, 12);
+  }
+
+  .scrollBox:nth-child(7) {
+    background-color: rgb(8, 235, 201);
+  }
+
+
+
+
+.horiBox1{ width: 50%; }
+
+
+.roundCircel{ width:100%; }
+
+
+
+
 
 }
